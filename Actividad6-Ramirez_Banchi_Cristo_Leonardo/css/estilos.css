@@ -1,0 +1,173 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Tipografía manuscrita para títulos principales */
+.title-handwriting {
+    font-family: 'Caveat', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Hero / Portada Principal */
+.hero-bambu {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-bambu::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    margin-top: -10px;
+}
+
+/* Barra de navegación inferior del Hero (Vuelos, Hoteles, Tours) */
+.hero-nav-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.hero-nav-bar a:hover {
+    color: #0dcaf0;
+}
+
+/* Banner central "Destinos" */
+.banner-destinos {
+    background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 60px 0;
+}
+
+.banner-destinos::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-destinos h2 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+/* Cuadrícula de imágenes de destinos */
+.destination-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.destination-img:hover {
+    transform: scale(1.02);
+}
+
+/* Pie de página oscuro estilo corporativo */
+.footer-bambu {
+    background-color: #13222d;
+    color: #adb5bd;
+    padding: 50px 0 20px 0;
+}
+
+.footer-bambu h4, .footer-bambu a {
+    color: white;
+}
+
+.footer-bambu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bambu ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bambu ul li a {
+    text-decoration: none;
+    color: #ced4da;
+    font-size: 0.9rem;
+}
+
+.footer-bambu ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.social-icons a:hover {
+    background: #0dcaf0;
+    color: #13222d;
+}
